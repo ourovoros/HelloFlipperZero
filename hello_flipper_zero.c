@@ -12,7 +12,7 @@ static void draw_callback(Canvas* canvas, void* ctx) {
 
     canvas_clear(canvas);
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str(canvas, 0, 30, "Hello Flipper Zero!");
+    canvas_draw_str_aligned(canvas, 64, 28, AlignCenter, AlignCenter, "Hello Flipper Zero!");
 }
 
 static void input_callback(InputEvent* input_event, void* ctx) {
